@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  item_id: 1
+  model_name: MyString
+  action: MyString
+  model_changes: MyString
+
+two:
+  item_id: 1
+  model_name: MyString
+  action: MyString
+  model_changes: MyString

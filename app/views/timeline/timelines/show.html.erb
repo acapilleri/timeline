@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Item:</b>
+  <%= @timeline.item_id %>
+</p>
+
+<p>
+  <b>Model name:</b>
+  <%= @timeline.model_name %>
+</p>
+
+<p>
+  <b>Action:</b>
+  <%= @timeline.action %>
+</p>
+
+<p>
+  <b>Model changes:</b>
+  <%= @timeline.model_changes %>
+</p>
+
+
+<%= link_to 'Edit', edit_timeline_path(@timeline) %> |
+<%= link_to 'Back', timelines_path %>
