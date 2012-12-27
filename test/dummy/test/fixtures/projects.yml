@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nane: MyString
+  days: MyString
+  done: false
+
+two:
+  nane: MyString
+  days: MyString
+  done: false

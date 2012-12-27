@@ -11,9 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121226153445) do
+ActiveRecord::Schema.define(:version => 20121227094706) do
 
-  create_table "timeline_timelines", :force => true do |t|
+  create_table "projects", :force => true do |t|
+    t.string   "name"
+    t.string   "days"
+    t.boolean  "done"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "timeline_tracks", :force => true do |t|
     t.integer  "item_id"
     t.string   "model_name"
     t.string   "action"
@@ -21,5 +29,8 @@ ActiveRecord::Schema.define(:version => 20121226153445) do
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
   end
+
+  add_index "timeline_tracks", ["item_id"], :name => "index_timeline_tracks_on_item_id"
+  add_index "timeline_tracks", ["model_name"], :name => "index_timeline_tracks_on_model_name"
 
 end

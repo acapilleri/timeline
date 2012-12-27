@@ -1,4 +1,4 @@
 module Timeline
-  module TimelinesHelper
+  module TracksHelper
   end
 end

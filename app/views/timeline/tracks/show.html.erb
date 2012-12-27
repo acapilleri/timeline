@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Item:</b>
+  <%= @track.item_id %>
+</p>
+
+<p>
+  <b>Model name:</b>
+  <%= @track.model_name %>
+</p>
+
+<p>
+  <b>Action:</b>
+  <%= @track.action %>
+</p>
+
+<p>
+  <b>Model changes:</b>
+  <%= @track.model_changes %>
+</p>
+
+
+<%= link_to 'Edit', edit_track_path(@track) %> |
+<%= link_to 'Back', tracks_path %>

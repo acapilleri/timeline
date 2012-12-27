@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  item_id: 1
+  model_name: FirstModel
+  action: udate
+  model_changes: 'my_change'
+
+two:
+  item_id: 2
+  model_name: SecondModel
+  action: create
+  model_changes: 'my_change'
