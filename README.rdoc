@@ -2,10 +2,21 @@
 Track the entire life cycle of ActiveRecord models.
 
 ==Installation
-Add to your Gemfile and run the bundle command to install it.
+Add the gem to your Gemfile
 
   gem "timeline"
+
+Copy some migration stuff:
+
+  rake timeline:install:migrations
+  rake db:migrate
+
+Add to your route.rb file:
+
+  mount Timeline::Engine => "/timeline"
+
 Requires Ruby 1.9.2 or later.
+
 
 ==Usage
 Call timeline in an ActiveRecord class and pass the name of the attributes you wish to track of your Model.
