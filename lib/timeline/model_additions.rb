@@ -10,15 +10,15 @@ module Timeline
 
     def track(attributes)
       after_create do |record|
-        map_attributes_and_save('create', attributes)
+        map_attributes_and_save('created', attributes)
       end
 
       after_update do |record|
-        map_attributes_and_save('update', attributes)
+        map_attributes_and_save('updated', attributes)
       end
 
       after_destroy do |record|
-        map_attributes_and_save('destroy', attributes)
+        map_attributes_and_save('destroyed', attributes)
       end
     end
   end
