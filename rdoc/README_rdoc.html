@@ -83,9 +83,19 @@
 
 <h2 id="label-Installation">Installation</h2>
 
-<p>Add to your Gemfile and run the bundle command to install it.</p>
+<p>Add the gem to your Gemfile</p>
 
 <pre>gem &quot;timeline&quot;</pre>
+
+<p>Copy some migration stuff:</p>
+
+<pre>rake timeline:install:migrations
+rake db:migrate</pre>
+
+<p>Add to your route.rb file:</p>
+
+<pre class="ruby"><span class="ruby-identifier">mount</span> <span class="ruby-constant">Timeline</span><span class="ruby-operator">::</span><span class="ruby-constant">Engine</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;/timeline&quot;</span>
+</pre>
 
 <p>Requires Ruby 1.9.2 or later.</p>
 

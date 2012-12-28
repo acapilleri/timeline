@@ -4,7 +4,7 @@ Track the entire life cycle of ActiveRecord models.
 ==Installation
 Add the gem to your Gemfile
 
-  gem "timeline"
+  gem "models_timeline"
 
 Copy some migration stuff:
 
@@ -13,7 +13,7 @@ Copy some migration stuff:
 
 Add to your route.rb file:
 
-  mount Timeline::Engine => "/timeline"
+  mount ModelsTimeline::Engine => "/timeline"
 
 Requires Ruby 1.9.2 or later.
 
@@ -36,6 +36,10 @@ Track one or more attributes:
   end
 
 Only the changes of name and price will be tracked.
+
+To see the tracked changes go to:
+
+  http://domain:port/models_timeline
 
 Development
 Questions or problems? Please post them on the issue tracker. You can contribute changes by forking the project and submitting a pull request. You can ensure the tests passing by running bundle and rake.

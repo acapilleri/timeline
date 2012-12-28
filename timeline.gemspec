@@ -6,7 +6,7 @@ require "timeline/version"
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "models_timeline"
-  s.version     = Timeline::VERSION
+  s.version     = ModelsTimeline::VERSION
   s.authors     = ["Angelo Capilleri"]
   s.email       = ["capilleri@yahoo.com"]
   s.homepage    = "https://github.com/acapilleri/timeline"

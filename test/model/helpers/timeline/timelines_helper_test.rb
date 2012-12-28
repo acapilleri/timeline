@@ -1,6 +1,6 @@
 require 'test_helper'
 
-module Timeline
+module ModelsTimeline
   class TimelinesHelperTest < ActionView::TestCase
   end
 end

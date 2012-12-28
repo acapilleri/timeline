@@ -1,4 +1,4 @@
-module Timeline
+module ModelsTimeline
   module TracksHelper
   end
 end

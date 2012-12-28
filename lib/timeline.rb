@@ -1,3 +1,3 @@
 require 'timeline/engine'
-module Timeline
+module ModelsTimeline
 end

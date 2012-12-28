@@ -1,8 +1,7 @@
 PATH
   remote: .
   specs:
-    timeline (0.0.1)
-      debugger
+    models_timeline (0.0.2)
       rails (~> 3.2.9)
 
 GEM
@@ -102,6 +101,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  debugger
   jquery-rails
+  models_timeline!
   sqlite3
-  timeline!

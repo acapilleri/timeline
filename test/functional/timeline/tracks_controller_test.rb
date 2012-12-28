@@ -1,6 +1,6 @@
 require 'test_helper'
 
-module Timeline
+module ModelsTimeline
   class TracksControllerTest < ActionController::TestCase
     fixtures 'timeline/tracks'
     setup do
