@@ -8,7 +8,7 @@ Add the gem to your Gemfile
 
 Copy some migration stuff:
 
-  rake timeline:install:migrations
+  rake models_timeline:install:migrations
   rake db:migrate
 
 Add to your route.rb file:
