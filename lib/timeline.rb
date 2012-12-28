@@ -1,6 +1,3 @@
-require "timeline/engine"
-require "timeline/model_additions"
-require "timeline/railtie"
-
+require 'timeline/engine'
 module Timeline
 end

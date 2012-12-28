@@ -1,13 +1,27 @@
 module Timeline
   module ModelAdditions
-    def self.extended(obj)
+    def self.extended(obj) #:nodoc
       obj.send :include, Timeline::ClassMethods
     end
 
+    # To track your model changes call <tt> timeline </tt>
+    # in any Active Record model class.
+    #
+    #   class Product < ActiveRecord::Base
+    #     timeline
+    #   end
+    #
+    # To track only one or a set of attributes(columns) call <tt> timeline :attr1, :attr2 </tt>.
+    #
+    #   class Product < ActiveRecord::Base
+    #     timeline :price, :description
+    #   end
+    #
     def timeline(*attrs)
       track(attrs)
     end
 
+  private
     def track(attributes)
       after_create do |record|
         map_attributes_and_save('created', attributes)

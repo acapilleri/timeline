@@ -1,0 +1,10 @@
+<div class="track">
+    <%= track.model_name-%>
+    <b><%=link_to"#{track.model_name}",'' -%></b>
+    was <%=track.action + 'd'%>
+    <%track.model_changes.each do |k,v|%>
+    , <%="#{k} </b> <em>'#{v.first}'</em> to  <em>'#{v.second}'</em>".html_safe-%></b>
+    <%end%>
+
+    <%=distance_of_time_in_words track.created_at,Time.now-%> ago.
+</div>
