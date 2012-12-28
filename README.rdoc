@@ -13,7 +13,7 @@ Copy some migration stuff:
 
 Add to your route.rb file:
 
-  mount ModelsTimeline::Engine => "/timeline"
+  mount ModelsTimeline::Engine => "/models_timeline"
 
 Requires Ruby 1.9.2 or later.
 
